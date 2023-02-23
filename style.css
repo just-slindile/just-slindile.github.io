@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar ul li{
+    font-size: 1.1rem;
+}
+
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black; 
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('gallery/IMG_9356.jpg') no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.heading{
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+    transform: scale(1,1);
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+#about h1{
+    color: black;
+    margin: 55px;
+}
+
+.about{
+    display: flex;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+}
+
+#skills h1{
+    color: black;
+    margin: 55px;
+}
+
+/* 
+#skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;;
+} */
+
+
+.skills-image{
+    width: 260px;
+    height: 540px;
+    padding: 10px;
+    margin: 10px;
+    /* display: inline-flex; */
+}
+
+
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+#contact h1{
+    margin: 50px;
+    color: black;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+.message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
